@@ -181,7 +181,6 @@ total+=p.precio;
 });
 document.getElementById("totalCarrito").innerText="Total: "+total;
 }
-// CONTROL DE VEHICULOS
 
 let vehiculos=[];
 
