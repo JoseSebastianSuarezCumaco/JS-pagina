@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejercicios De JavaScript</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1>Aplicaciones JavaScript</h1>
+<p>Ejercicios practicos de JavaScript</p>
+</header>
+<nav class="tabs">
+
+<button onclick="mostrarTab('inicio')">Inicio</button>
+<button onclick="mostrarTab('parte1')">Parte 1</button>
+<button onclick="mostrarTab('parte2')">Parte 2</button>
+
+</nav>
+<main>
+<section id="inicio" class="tab">
+<div class="hero">
+<h2>Helouda xd</h2>
+
+<p>
+Pagina web con ejercicios de JavaScript y pequeños sistemas
+interactivos desarrollados con DOM (no el juego :v), eventos y logica de programación :D
+</p>
+
+</div>
+</section>
+<section id="parte1" class="tab">
+<h2>Parte 1 - Ejercicios</h2>
+
+<div class="grid">
+<div class="card">
+<h3>1. Mostrar mensaje</h3>
+<button onclick="mostrarMensaje()">Mostrar mensaje</button>
+<p id="mensaje"></p>
+</div>
+<div class="card">
+<h3>2. Calculadora de suma</h3>
+<input type="number" id="n1">
+<input type="number" id="n2">
+<button onclick="sumar()">Sumar</button>
+<p id="resultadoSuma"></p>
+
+</div>
+
+<div class="card">
+<h3>3. Cambiar color de fondo</h3>
+<button onclick="colorFondo('red')">Rojo</button>
+<button onclick="colorFondo('blue')">Azul</button>
+<button onclick="colorFondo('green')">Verde</button>
+
+</div>
+<div class="card">
+<h3>4. Contador de clics</h3>
+<button onclick="contadorClicks()">Clic</button>
+<p id="contador">0</p>
+</div>
+
+
+<div class="card">
+<h3>5. Lista dinámica</h3>
+<input id="tarea" placeholder="Nueva tarea">
+<button onclick="agregarTarea()">Agregar</button>
+<ul id="lista"></ul>
+</div>
+
+<div class="card">
+
+<h3>6. Validación de formulario</h3>
+<form onsubmit="validar(event)">
+<input id="nombre" placeholder="Nombre">
+<input id="correo" placeholder="Correo">
+<input id="edad" placeholder="Edad">
+<button type="submit">Enviar</button>
+</form>
+
+<p id="mensajeForm"></p>
+</div>
+<div class="card">
+<h3>7. Calculadora básica</h3>
+<input id="c1" type="number">
+<input id="c2" type="number">
+<select id="operacion">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+
+</select>
+<button onclick="calcular()">Calcular</button>
+<p id="resultadoCalc"></p>
+</div>
+
+
+<div class="card">
+<h3>8. Lista con eliminar</h3>
+<input id="tarea2">
+<button onclick="agregarTareaEliminar()">Agregar</button>
+<ul id="lista2"></ul>
+</div>
+
+
+<div class="card">
+<h3>9. Temporizador</h3>
+<button onclick="iniciar()">Iniciar</button>
+<button onclick="detener()">Detener</button>
+<button onclick="reiniciar()">Reiniciar</button>
+<p id="tiempo">0</p>
+
+</div>
+</div>
+</section>
+<section id="parte2" class="tab">
+<h2>Parte 2 - Aplicaciones</h2>
+<div class="grid">
+<div class="card">
+<h3>1. Cuenta bancaria</h3>
+<input id="saldoInicial" placeholder="Saldo inicial">
+<button onclick="crearCuenta()">Crear cuenta</button>
+<button onclick="depositar()">Depositar 100</button>
+<button onclick="retirar()">Retirar 50</button>
+
+<p id="saldo"></p>
+
+</div>
+<div class="card">
+<h3>2. Inventario</h3>
+<input id="producto" placeholder="Producto">
+<input id="precio" placeholder="Precio">
+<input id="cantidad" placeholder="Cantidad">
+
+<button onclick="agregarProducto()">Agregar</button>
+<ul id="inventario"></ul>
+<p id="totalInventario"></p>
+
+</div>
+<div class="card">
+<h3>3. Registro de estudiantes</h3>
+<input id="estudiante" placeholder="Nombre">
+<input id="nota" placeholder="Nota">
+<button onclick="agregarEstudiante()">Registrar</button>
+<ul id="listaEstudiantes"></ul>
+
+</div>
+<div class="card">
+
+<h3>5. Control de vehículos</h3>
+<input id="vehiculoNombre" placeholder="Nombre del vehículo">
+<button onclick="agregarVehiculo()">Agregar vehículo</button>
+<table>
+<thead>
+<tr>
+<th>Vehículo</th>
+<th>Velocidad</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody id="tablaVehiculos"></tbody>
+
+</table>
+</div>
+
+<div class="card">
+<h3>6. Biblioteca</h3>
+<input id="libro" placeholder="Título">
+<button onclick="agregarLibro()">Agregar libro</button>
+<ul id="biblioteca"></ul>
+
+</div>
+</div>
+
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
